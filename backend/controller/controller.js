@@ -34,6 +34,7 @@
 
 
 const { GoogleGenAI } = require("@google/genai");
+require("dotenv").config(); // ✅ Make sure this is included if you're using .env
 
 const resultData = async (req, res) => {
   try {
