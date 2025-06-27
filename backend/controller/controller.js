@@ -34,7 +34,7 @@
 
 
 const { GoogleGenAI } = require("@google/genai");
-require("dotenv").config(); // ✅ Make sure this is included if you're using .env
+
 
 const resultData = async (req, res) => {
   try {
@@ -48,7 +48,7 @@ const resultData = async (req, res) => {
       });
     }
 
-    const ai = new GoogleGenAI({ apiKey: process.env.apiKey });
+    const ai = new GoogleGenAI({ apiKey: process.env.ApiKey });
 
     const result = await ai.models.generateContent({
       model: "gemini-2.5-flash-preview-05-20",
