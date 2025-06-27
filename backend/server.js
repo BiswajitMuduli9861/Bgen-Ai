@@ -13,7 +13,7 @@ const cors = require("cors");
 
 const _dirname = path.resolve();
 const route  = require("./route/route");
-app.use(cors({  origin: "http://localhost:5173", // frontend origin
+app.use(cors({  origin: "https://bgen-ai.onrender.com", // frontend origin
   credentials: true}));   //||credentials: true||----Ye credentials: true setting browser ko cookies, authorization headers, or TLS client certificates send karne ki permission deti hai jab frontend (React/Vite) and backend (Node/Express) alagd domains ya ports pe ho.
 // const ai = new GoogleGenAI({ apiKey: "" });
 // const ai = new GoogleGenAI({ apiKey: process.env.apiKey });

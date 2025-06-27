@@ -10,7 +10,7 @@ const Login = ({Login}) => {
     const loginWithGoogle = () => {
         localStorage.setItem("userExist", "true");
     
-        window.open('http://localhost:5000/auth/google',"_self")
+        window.open('https://bgen-ai.onrender.com/auth/google',"_self")
     }
 
     const [login, setLogin] = useState({
@@ -33,7 +33,7 @@ const Login = ({Login}) => {
         }
 
         try {
-            const res = await axios.post("http://localhost:5000/api/login",login,{withCredentials: true })  // ||withCredentials: true||---ye ek Axios ka config option hai jo cookies ko automatically request ke sath bhejne ya receive karne ki permission deta hai — jab aapka frontend aur backend alag origins pe ho (e.g., frontend: localhost:3000, backend: localhost:5000).
+            const res = await axios.post("https://bgen-ai.onrender.com/api/login",login,{withCredentials: true })  // ||withCredentials: true||---ye ek Axios ka config option hai jo cookies ko automatically request ke sath bhejne ya receive karne ki permission deta hai — jab aapka frontend aur backend alag origins pe ho (e.g., frontend: localhost:3000, backend: localhost:5000).
             // console.log(res.statusText)
             console.log(res)
             setIsSubmmited(false)

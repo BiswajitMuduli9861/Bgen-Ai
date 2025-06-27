@@ -26,7 +26,7 @@ const ChangePassword = () => {
             return;
         }
         try {
-            const res = await axios.post("http://localhost:5000/api/updatepassword", {newPassword, userId});
+            const res = await axios.post("https://bgen-ai.onrender.com/api/updatepassword", {newPassword, userId});
             // console.log(res);
             if (res.status === 200) {
                 setNewPassword("");

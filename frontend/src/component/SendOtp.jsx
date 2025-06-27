@@ -21,7 +21,7 @@ const SendOtp = () => {
     // }, 1500);
 
     try {
-            const res = await axios.post("http://localhost:5000/api/sendotp",{email})
+            const res = await axios.post("https://bgen-ai.onrender.com/api/sendotp",{email})
             // console.log(res.statusText)
             // console.log(res)
              setLoading(true);

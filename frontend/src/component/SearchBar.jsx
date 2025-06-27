@@ -109,7 +109,7 @@ const [searchResults, setSearchResults] = useState('');
           alert("Please enter a question");
         }
         setSearchValue(''); // Clear the input field after submission
-        const response = await axios.post('http://localhost:5000/api/content', {
+        const response = await axios.post('https://bgen-ai.onrender.com/api/content', {
           question: searchValue.trim(),
           
         },{withCredentials: true})   // ||withCredentials: true||---ye ek Axios ka config option hai jo cookies ko automatically request ke sath bhejne ya receive karne ki permission deta hai — jab aapka frontend aur backend alag origins pe ho (e.g., frontend: localhost:3000, backend: localhost:5000).

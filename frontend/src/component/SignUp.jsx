@@ -45,7 +45,7 @@ const SignUp = () => {
 
         try {
 
-            const res =await axios.post('http://localhost:5000/api/signup',signup,)
+            const res =await axios.post('https://bgen-ai.onrender.com/api/signup',signup,)
             console.log(res);
             if(res.status === 201){
                 // console.log('User created successfully');
@@ -115,7 +115,7 @@ const initialState = {
 
      const loginWithGoogle = () => {
         localStorage.setItem("userExist", "true");
-        window.open('http://localhost:5000/auth/google',"_self")
+        window.open('https://bgen-ai.onrender.com/auth/google',"_self")
     }
 
 
