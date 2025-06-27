@@ -32,7 +32,7 @@ const ChangePassword = () => {
                 setNewPassword("");
                 setConfirmPassword("");
                 
-                toast.success('Password Change', {
+                toast.success('Password Changed', {
                                     position: "top-right",
                                     autoClose: 4000,
                                     hideProgressBar: false,
